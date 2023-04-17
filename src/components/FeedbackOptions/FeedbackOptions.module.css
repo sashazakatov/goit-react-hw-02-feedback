@@ -1,0 +1,13 @@
+.FeedbackOptions{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.button{
+    text-transform: capitalize;
+    border-radius: 4px;
+    border: 0.1px solid;
+}
+.button:active{
+    background-color: blue;
+}
