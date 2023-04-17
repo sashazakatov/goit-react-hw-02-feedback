@@ -1,10 +1,19 @@
 import { Component } from "react";
+import PropTypes from "prop-types";
 import Section from "./Section";
 import FeedbackOptions from "./FeedbackOptions";
 import Statistics from "./Statistics";
 import Notification from "./Notification";
 
  class App extends Component{
+  static propTypes = {
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+    handelClick: PropTypes.func.isRequired,
+    countTotalFeedback: PropTypes.func.isRequired,
+    countPositiveFeedbackPercentage: PropTypes.func.isRequired,
+  };
   state = {
     good: 0,
     neutral: 0,
@@ -57,4 +66,5 @@ import Notification from "./Notification";
     );
   }
 };
+
 export default App;
