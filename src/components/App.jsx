@@ -6,14 +6,6 @@ import Statistics from "./Statistics";
 import Notification from "./Notification";
 
  class App extends Component{
-  static propTypes = {
-    good: PropTypes.number.isRequired,
-    neutral: PropTypes.number.isRequired,
-    bad: PropTypes.number.isRequired,
-    handelClick: PropTypes.func.isRequired,
-    countTotalFeedback: PropTypes.func.isRequired,
-    countPositiveFeedbackPercentage: PropTypes.func.isRequired,
-  };
   state = {
     good: 0,
     neutral: 0,
